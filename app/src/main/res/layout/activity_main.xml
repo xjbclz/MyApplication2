@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/mine_fragment_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/login_image"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/login"/>
+            <!--android:tint="#EEEEEE"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="用户名"
+            android:id="@+id/editText2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+        <FrameLayout
+            android:id="@+id/login_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="密码"
+            android:id="@+id/editPassword" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/login_eye_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/login_eye_first"
+                android:gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                android:backgroundTintMode="screen" />
+
+
+        </FrameLayout>
+
+
+        <!--<Button-->
+            <!--android:text="Button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/button2" />-->
+
+        <TextView
+            tools:text="联系人电话：%1$s"
+            android:textSize="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:tint="@color/colorAccent"
+            android:id="@+id/imageButton" />
+
+        <TextView
+            tools:text=" "
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_right_red"
+            android:id="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_right_red"
+            android:id="@+id/imageViewLeft" />
+
+        <TextView
+            tools:text=" "
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
